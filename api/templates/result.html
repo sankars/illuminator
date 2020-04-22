@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Analytics Result</title>
+</head>
+<body>
+<table>
+    <tr>
+        <h1>Language</h1>
+    </tr>
+    <tr>
+        Detected Language : {{ language }}
+    </tr>
+    
+    <tr>
+        <h1>Entities</h1>
+    </tr>
+    <tr>
+        {% for entity in entities %}
+        {% endfor %}
+    </tr>
+    
+    <tr>
+        <h1>Sentiment</h1>
+    </tr>
+    <tr>
+        Detected Sentiment : {{ sentiment }}
+    </tr>
+    <tr>
+        <h1>Key Phrases</h1>
+    </tr>
+    <tr>
+        {% for phrase in phrases %}
+        {% endfor %}
+    </tr>
+    
+</table>
+​
+</body>
+</html>

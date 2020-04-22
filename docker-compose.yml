@@ -1,0 +1,13 @@
+version: '2'
+services:
+    api:
+        image: illuminate
+        build: .
+        ports:
+        - "8080:80"
+    web:
+        image: illuminate-bolt
+        build: ../illuminate-bolt
+        ports:
+        - "80:80"
+
